@@ -1,4 +1,5 @@
 .attribution {
+  margin-top: 5dvh;
   font-size: 11px;
   text-align: center;
 }
@@ -7,3 +8,70 @@
   color: hsl(228, 45%, 44%);
 }
 
+body {
+  margin: 0;
+  background-image: url(../images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-size: 100dvw 100dvh;
+  background-repeat: no-repeat;
+  font-family: Open Sans;
+}
+
+main {
+  margin-top: 3dvw;
+  margin-left: 4dvw;
+}
+
+.logo {
+  width: 12dvw;
+  align-items: initial;
+}
+
+.imagen-parrafo {
+  display: flex;
+  width: 92dvw;
+  min-width: 300px;
+  height: 75dvh;
+}
+
+.imagen-principal {
+  width: 50dvw;
+}
+
+.parrafo {
+  margin-left: 4dvw;
+  margin-right: 2dvw;
+  color: white;
+  width: 38dvw;
+  font-size: 1.03rem;
+}
+
+h1 {
+  font-family: Poppins;
+  margin-top: 3dvw;
+  margin-right: 4dvw;
+  min-width:380px;
+  font-size: 3dvw;
+}
+
+button {
+  border-radius: 1.5625rem;
+  height: 6dvw;
+  max-height: 30px;
+  width: 10dvw;
+  min-width:80px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0dvw 0.5dvh 1dvh rgba(0, 0, 0, 0.701);
+}
+
+button:hover{
+  background-color:hsl(300, 69%, 71%);
+  color: white;
+  cursor: pointer;
+}
+
+
+@media(max-width: 375px) {
+
+}
