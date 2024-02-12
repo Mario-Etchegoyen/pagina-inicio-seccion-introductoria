@@ -39,6 +39,7 @@ main {
 }
 
 .parrafo {
+  background-color:brown;
   margin-left: 4dvw;
   margin-right: 2dvw;
   color: white;
@@ -71,6 +72,23 @@ button:hover{
   cursor: pointer;
 }
 
+.redes-sociales{
+  background-color: transparent;
+  width:91dvw;  
+  display: flex;
+  justify-content: end;
+  gap: .625rem
+  
+}
+
+.red-social{
+  width: 2em;
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: rgb(230, 230, 230);
+}
 
 @media(max-width: 375px) {
 
