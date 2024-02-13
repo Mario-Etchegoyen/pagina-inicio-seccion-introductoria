@@ -34,7 +34,7 @@ body {
   display: flex;
   margin-top: 30dvh;
   width: 90%;
-  min-width: 375px;
+  /* min-width: 375px; */
   height: 60dvh;
   margin: 10dvh 10% 0
 }
@@ -53,7 +53,7 @@ h1 {
   width: 80%;
   font-family: Poppins;
   margin-top: 2dvw;
-  font-size: xx-large;
+  font-size: 2.5dvw;
 }
 
 p {
@@ -61,8 +61,6 @@ p {
   width: 80%;
   font-size: 0.9rem;
 }
-
-
 
 button {
   border-radius: 1.5625rem;
@@ -73,6 +71,7 @@ button {
   border: none;
   color: hsl(257, 40%, 49%);
   box-shadow: 0dvw 0.5dvh 1dvh rgba(0, 0, 0, 0.701);
+  margin: 0%;
 }
 
 button:hover {
@@ -98,9 +97,35 @@ button:hover {
   border-color: white
 }
 
+/* -------------- media 680px ---------------------------- */
+
+@media(max-width: 680px) {
+  
+
+  h1{
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 0.7em;
+  }
+
+    .attribution {
+      background-color: rgba(131, 131, 130, 0.689);
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 11px;
+      text-align: center;
+    }
+  
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+}
 
 /* ------------------------------ 375 px ------------------------------ */
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   body {
     background-image: url(../images/bg-mobile.svg);
     background-color: hsl(257, 40%, 49%);
@@ -110,22 +135,23 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
 
-
+  main{
+    text-align: center;
+  }
 
   .logo {
     width: 30%;
-    margin-top: 2dvh
+    margin-top: 2dvh;
+    margin-left: -50%;
   }
 
   .imagen-parrafo {
     width: 80%;
-    min-width: 200px;
     display: flex;
     flex-direction: column;
-    margin: 10% 10% ;
+    margin: 10%;
     height: auto;
   }
 
@@ -142,39 +168,34 @@ button:hover {
     font-family: Poppins;
     margin-top: 10dvw;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
     width: 80%;
     font-size: larger;
+    margin-left: 10%
   }
 
   p {
     text-align: center;
     color: white;
     font-size: 3.4dvw;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
+    margin-left:10%
   }
 
 
-  button {
+  button {display:flex;
+    justify-content: center;
     border-radius: 1.5625rem;
     height: 7dvh;
-    width: 50dvw;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    margin: 5% 20% 0
+    width: 50%;
+    margin: 10% 25% 0;
   }
 
   .redes-sociales {
     display: flex;
     justify-content: space-evenly;
-    width: 46%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin: 20% 27% 0
+    width: 30%;
+    margin-left: 35%;
   }
 
   .red-social {
@@ -186,15 +207,15 @@ button:hover {
     border-color: rgb(230, 230, 230);
   }
 
-    .attribution {
-      background-color: rgba(131, 131, 130, 0.689);
-      width: 90%;
-        min-width: 200px;
-        display: flex;
-        flex-direction: column;
-        margin: 5% 5% 0% 5%;
-        height: auto;
-      
-    }
+  .attribution {
+    background-color: rgba(131, 131, 130, 0.689);
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin:  5% 0%;
+    height: auto;
+
+  }
 
 }
