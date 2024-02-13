@@ -1,5 +1,7 @@
 .attribution {
-  margin-top: 5dvh;
+  background-color: rgba(131, 131, 130, 0.689);
+  margin-left: auto;
+  margin-right: auto;
   font-size: 11px;
   text-align: center;
 }
@@ -12,84 +14,187 @@ body {
   margin: 0;
   background-image: url(../images/bg-desktop.svg);
   background-color: hsl(257, 40%, 49%);
-  background-size: 100dvw 100dvh;
+  background-size: contain;
+  background-position: 6dvw 0dvh;
   background-repeat: no-repeat;
   font-family: Open Sans;
+  color: white;
+
 }
 
-main {
-  margin-top: 3dvw;
-  margin-left: 4dvw;
-}
+
 
 .logo {
   width: 12dvw;
-  align-items: initial;
+  margin-top: 2%;
+  margin-left: 10%;
 }
 
 .imagen-parrafo {
   display: flex;
-  width: 92dvw;
-  min-width: 300px;
-  height: 75dvh;
+  margin-top: 30dvh;
+  width: 90%;
+  min-width: 375px;
+  height: 60dvh;
+  margin: 10dvh 10% 0
 }
 
 .imagen-principal {
-  width: 50dvw;
+  width: 50%;
 }
 
-.parrafo {
-  background-color:brown;
-  margin-left: 4dvw;
-  margin-right: 2dvw;
-  color: white;
-  width: 38dvw;
-  font-size: 1.03rem;
+.escritos {
+  margin-left: 5%;
+  margin-right: 10%;
 }
 
 h1 {
+  text-wrap: wrap;
+  width: 80%;
   font-family: Poppins;
-  margin-top: 3dvw;
-  margin-right: 4dvw;
-  min-width:380px;
-  font-size: 3dvw;
+  margin-top: 2dvw;
+  font-size: xx-large;
 }
+
+p {
+  color: white;
+  width: 80%;
+  font-size: 0.9rem;
+}
+
+
 
 button {
   border-radius: 1.5625rem;
   height: 6dvw;
   max-height: 30px;
   width: 10dvw;
-  min-width:80px;
+  min-width: 80px;
   border: none;
   color: hsl(257, 40%, 49%);
   box-shadow: 0dvw 0.5dvh 1dvh rgba(0, 0, 0, 0.701);
 }
 
-button:hover{
-  background-color:hsl(300, 69%, 71%);
+button:hover {
+  background-color: hsl(300, 69%, 71%);
   color: white;
   cursor: pointer;
 }
 
-.redes-sociales{
-  background-color: transparent;
-  width:91dvw;  
+
+.redes-sociales {
+  width: 15%;
   display: flex;
-  justify-content: end;
-  gap: .625rem
-  
+  justify-content: space-evenly;
+  margin-left: 75%;
 }
 
-.red-social{
-  width: 2em;
+.red-social {
+  width: 1.4em;
   height: auto;
   border-radius: 50%;
   border-style: solid;
-  border-width: 0.2em;
-  border-color: rgb(230, 230, 230);
+  border-width: 0.15em;
+  border-color: white
 }
 
-@media(max-width: 375px) {
+
+/* ------------------------------ 375 px ------------------------------ */
+@media (max-width: 376px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: 0dvw 0dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+
+
+  .logo {
+    width: 30%;
+    margin-top: 2dvh
+  }
+
+  .imagen-parrafo {
+    width: 80%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10% ;
+    height: auto;
+  }
+
+  .imagen-principal {
+    width: 100%
+  }
+
+  .escritos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-family: Poppins;
+    margin-top: 10dvw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: larger;
+  }
+
+  p {
+    text-align: center;
+    color: white;
+    font-size: 3.4dvw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+
+  button {
+    border-radius: 1.5625rem;
+    height: 7dvh;
+    width: 50dvw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin: 5% 20% 0
+  }
+
+  .redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    width: 46%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 20% 27% 0
+  }
+
+  .red-social {
+    width: 1em;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(230, 230, 230);
+  }
+
+    .attribution {
+      background-color: rgba(131, 131, 130, 0.689);
+      width: 90%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: 5% 5% 0% 5%;
+        height: auto;
+      
+    }
 
 }
